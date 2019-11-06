@@ -1,12 +1,12 @@
 import React from 'react';
 
 
-funktion Nyhetsartikel() {
+funktion Nyhetsartikel(props) {
     return (
         <articles>
-            <img src="https://source.unsplash.com/random/200x125/?rabbit" />
-            <h2>Testnyhet</h2>
-            <p>Beskrivning av testnyheten</p>
+            <img src={props.Nyhetsartikel.urlToImage} />
+            <h2>{props.Nyhetsartikel.title}</h2>
+            <p>{props.Nyhetsartikel.description}</p>
             <a>Läs mer..</a>
         </articles>
     );
